@@ -1,0 +1,53 @@
+session_config:
+  session_expiration_time:         60
+  carry_over_slots_to_new_session: true
+
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- return_book
+
+entities:
+  - student_name
+  - student_id
+  - book_id
+
+slots:
+  student_name:
+    type:                          unfeaturized
+  student_id:
+    type:                          unfeaturized
+  book_id:
+    type:                          unfeaturized
+
+responses:
+  utter_greet:
+  - text:                          Hey! How are you?
+  utter_goodbye:
+  - text:                          Bye
+  utter_iamabot:
+  - text:                          I am a bot, powered by Rasa.
+
+#for utter action for form must have prefix utter_ask_-
+utter_ask_student_name:
+  - text:                          May i know your name?
+utter_ask_student_id:
+  - text:                          What is the student id?
+utter_ask_book_id:
+  - text:                          What is the book id of the book you want to return?
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_iamabot
+- utter_ask_student_name
+- utter_ask_student_id
+- utter_ask_book_id
+- action_save_data
+
+#Form_Info is the one we return in actions.py
+forms:
+  - Form_Info
