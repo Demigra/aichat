@@ -13,6 +13,7 @@ intents:
 - smalltalk_agent_boring
 - smalltalk_agent_boss
 - smalltalk_agent_busy
+- smalltalk_agent__capable
 - smalltalk_agent_chatbot
 - smalltalk_agent_clever
 - smalltalk_agent_crazy
@@ -86,6 +87,7 @@ intents:
 - smalltalk_user_wants_to_see_agent_again
 - smalltalk_user_wants_to_talk
 - smalltalk_user_will_be_back
+- smalltalk_agent_capable
 responses:
   utter_smalltalk_agent_acquaintance:
   - text: I'm a conversational app.
@@ -134,6 +136,9 @@ responses:
   - text: Never too busy for you. Shall we chat?
   - text: You're my priority. Do you wanna chat?
   - text: I always have time to chat with you. Wanna chat?
+  utter_smalltalk_agent__capable:
+  - text: I can chat with you.
+  - text: I can be your friend in need.
   utter_smalltalk_agent_chatbot:
   - text: That's me. I chat, therefore I am.
   - text: Indeed I am. I'll be here whenever you need me.
@@ -450,6 +455,7 @@ actions:
 - utter_smalltalk_agent_boring
 - utter_smalltalk_agent_boss
 - utter_smalltalk_agent_busy
+- utter_smalltalk_agent__capable
 - utter_smalltalk_agent_chatbot
 - utter_smalltalk_agent_clever
 - utter_smalltalk_agent_crazy

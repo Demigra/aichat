@@ -57,6 +57,11 @@ stories:
   - intent: smalltalk_agent_busy
   - action: utter_smalltalk_agent_busy
 
+- story: path_smalltalk_agent_capable
+  steps:
+  - intent: smalltalk_agent__capable
+  - action: utter_smalltalk_agent__capable
+
 - story:  path_smalltalk_agent_chatbot
   steps:
   - intent: smalltalk_agent_chatbot
